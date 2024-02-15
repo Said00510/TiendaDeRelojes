@@ -3,6 +3,7 @@
 Este proyecto es una tienda de relojes en línea que he desarrollado como parte de mi aprendizaje en diseño web y práctica de JavaScript. Fue mi primer proyecto significativos en los que me he enfocado en el manejo de JavaScript, ya que estaba en las primeras etapas de aprender este lenguaje de programación.
 
 ![Portafolio Preview](./imgs/project4.png)
+![Demo](https://shop-reloj.netlify.app/)
 
 ## Características a futuro para implementar
   
