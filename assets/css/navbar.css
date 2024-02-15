@@ -1,0 +1,605 @@
+
+/*nav-container*/
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.color-change.change-color {color: #000;}
+.container-links .ul-links li a.change-color {color: #000;}
+
+.container-links .ul-links{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    .container-links .ul-links{
+        max-width: 100%;
+        width: 50rem;
+    }
+}
+
+@media screen and (min-width: 1052px) and (max-width: 1200px) { 
+    .container-links .ul-links{
+        width: 55rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container-links .ul-links{
+        width: 60rem;
+    }
+}
+
+
+
+.container-links .ul-links li a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+
+.nav-logo{
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #000;
+}
+
+.nav-logo .span-cambio-color {font-weight: bold;}
+
+.carrito-info{
+    margin-right: 2rem;
+    cursor: default;
+    color: #000;
+    display: flex; 
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    .carrito-info {
+        margin-right: 0;
+    }
+
+    .carrito-info span {
+        margin: 0 .4rem;
+        font-size: 1.6rem;
+    }
+}
+
+.carrito-info span{
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;  
+}
+
+.numerito-cart{
+    position: absolute;
+    top: 15px;
+    right: 90px;
+    background-color: #000;
+    color: #fff;
+    padding: 0 .5rem;
+    font-size: 1.3rem;
+    border-radius: 50%;
+}
+
+.total-cart{
+    font-weight: 700;
+}
+
+/*Hombre detalles*/
+.nav-item {cursor: pointer;}
+
+.hombre-details{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    transition: left .3s ease;
+    height: 90%;
+    width: 100vw;
+    z-index: 90;
+    background-color: #fff;
+    visibility: hidden;
+    border-top: 1px #ccc solid;
+    transition: .2s;
+}
+
+.hombre-details-container{
+    padding-top: 3rem;
+}
+
+.hombre-details.activeDetailsNav,
+.mujer-details.activeDetailsNav {
+    visibility: visible;
+    bottom: 0;
+    transition: .2s;
+}
+
+.hombre-details .hombre-details__title{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hombre-details .hombre-details-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hombre-details .hombre-details-container ul li {
+    font-size: 1.2rem;
+}
+
+.hombre-details .hombre-details-container ul li a {
+    color: #000;
+    cursor: pointer;
+}
+
+.hombre-details .hombre-details-container ul li a:hover {
+    color: #202020;
+}
+
+.novedades-details .novedades-details-container .novedades-title a {
+    font-size: 4rem;
+    color: #000;
+}
+
+/*RESPONSIVE*/
+.hamburger-cont i {
+    font-size: 3rem;
+    position: absolute;
+    top: 2rem;
+    cursor: pointer;
+    left: 2rem;
+    display: none;
+}
+
+/*MENU HAMBURGER MOBILE*/
+
+.container-links-mobile {
+    position: fixed;
+    background-color: #fff;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    top: 0;
+    left: -100%;
+    z-index: 1000;
+    max-width: 100%;
+    height: 100vh;
+    border-radius:  0 15px 15px 0;
+    box-shadow: 2px 0 5px 7px rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+    transition: left .5s;
+    /* left: -100%;
+    display: none; */
+}
+
+.container-links-mobile.overActive{
+    overflow-y: scroll;
+}
+
+.container-links-mobile.activeMenu{
+    left: 0;
+}
+
+.container-links-mobile .logo-mobile-menu a img {
+    max-width: 100%;
+    width: 90%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+}
+
+.container-links-mobile .container-ul-links-mobile {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 3rem;
+}
+
+.container-links-mobile .container-ul-links-mobile .links-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 6px;
+}
+
+.container-links-mobile .container-ul-links-mobile .links-mobile i {
+    margin-right: 1rem;
+}
+
+.container-links-mobile .container-ul-links-mobile .links-mobile li {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-links-mobile .container-ul-links-mobile .mobile-line ul {
+    border-left: 2px solid #303440;
+
+}
+
+
+
+.container-links-mobile .container-ul-links-mobile .links-mobile .menus-dropdwon-mobile .menu__dropdown-toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-left: 6rem;
+    margin-left: auto;
+    transition: height .4s ;
+    height: 0;
+}
+.container-links-mobile .container-ul-links-mobile .menus-dropdwon-mobile .menu__dropdown-toggle{
+    overflow: hidden;
+}
+
+.container-links-mobile .container-ul-links-mobile .links-mobile .menus-dropdwon-mobile ul li a{
+    color: #000;
+}
+
+.container-links-mobile .container-ul-links-mobile .links-mobile .menus-dropdwon-mobile ul li:first-child {
+    margin-top: 1rem;
+}
+
+.container-links-mobile .container-ul-links-mobile .search-mobile-container{
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 2px 4px  rgba(0, 0, 0, 0.1);
+}
+
+.container-links-mobile .container-ul-links-mobile .search-mobile-container input{
+    outline: 0;
+    border: none;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.container-links-mobile .container-ul-links-mobile .search-mobile-container button{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+}
+
+/*MENU ABAJO MOBILE*/
+.menu-mobile {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 5px 7px 6px 7px rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+}
+
+.menu-mobile span i{
+    font-size: 2rem;
+    color: #000;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.menu-mobile .store-mb {
+    position: relative;
+}
+
+.numerito-cart--mobile {
+    position: absolute;
+    bottom:0;
+    font-size: .9rem;
+    right:7px;
+    background-color: #000;
+    color: #fff;
+    padding: .1rem .3rem;
+    border-radius: 100%;
+}
+
+/*Responsive*/
+
+
+@media screen and (min-width: 991px){
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer .end-footer p{
+        font-size: 1.7rem ;
+    }
+}
+
+@media screen and (min-width: 1168px){ 
+    .info__inicio--container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info__inicio--text p{
+        font-size: 1.6rem;
+        max-width: 100%;
+        width: 70rem;
+    }
+
+    .info .info__inicio--container .inicio__img--destkop{
+        display: block;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1168px) {
+    .info__inicio--text h1{
+        text-align: center;
+    }
+    
+    .info__inicio--text h1{
+        font-size: 7rem;
+    }
+    
+    .info__inicio--text p{
+        font-size: 1.6rem;
+    }
+    
+    .info__inicio--comprar{
+        border: none;
+        color: #fff;
+        background-color: #673B1C;
+        padding: 1rem;
+        border-radius: 2rem;
+        width: 20rem;
+        cursor: pointer;
+        font-size: 1.6rem;
+    }
+
+}
+
+@media screen and (min-width: 1091px){
+    .reloj-container-mas-vendidos{
+        padding: 6rem 0;
+        display: flex;
+    }
+
+    .reloj-mas-vendidos .container-all-reloj-vendidos .reloj-container-mas-vendidos .item-reloj-vendidos .deskopt-button{ 
+        display: block !important;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 712px) and (max-width: 1300px){
+    .compras-seguras .compras-seguras-container{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1168px) {
+    .info__inicio--text h1{
+        text-align: center;
+    }
+
+    .info .info__inicio--container .inicio__img{
+        display: block;
+    }
+
+    .info__inicio--container .info__inicio--text button{
+        display: none;
+    }
+
+    .reloj-container-mas-vendidos .item-reloj-vendidos{
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .reloj-mas-vendidos .container-all-reloj-vendidos .reloj-container-mas-vendidos .item-img-reloj-vendidos img {
+        display: none;
+    }
+
+    .reloj-mas-vendidos .container-all-reloj-vendidos .reloj-container-mas-vendidos .item-img-reloj-vendidos--mobile img{
+        display: block;
+    }
+
+    .reloj-mas-vendidos .container-all-reloj-vendidos .reloj-container-mas-vendidos .mobile-button button{
+        display: block !important ;
+    }
+
+    .container-all-reloj-vendidos .reloj-container-mas-vendidos .item-reloj-vendidos p {
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 991px) { 
+
+    .end-footer {
+        margin-bottom: 4rem;
+    }
+
+    .menu-mobile {
+        visibility: visible;
+    }
+
+    .nav-container .hamburger-cont i {
+        display: block; 
+    }
+
+    .container-links, .carrito-info, .carrito-info span  {
+        display: none;
+    }
+
+    .search-container, .target-remove {
+        visibility: hidden;
+    }
+
+    .container-links-mobile {
+        /* display: block; */
+        width: 31rem;
+    }
+
+    .metodos-de-pago .contenedor-meotodo-pago h2{
+        font-size: 1.6rem;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+
+@media screen and (max-width: 767px) {
+    .info__inicio--container .info__inicio--text h1{
+        font-size: 4rem ;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .info__inicio--container .info__inicio--text p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 712px){
+    .compras-seguras .compras-seguras-container{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .compras-seguras .compras-seguras-container img {
+        width: 200px;
+    }
+
+    .compras-seguras .metodos-de-pago {
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .section-marcas .titulo-marcas  {
+        font-size: 3rem;
+
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .info__inicio--container .info__inicio--text h1{
+        font-size: 3rem ;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .main .titulo-arriba-container-items h2{ 
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container-links-mobile {
+        width: 23rem;
+    }
+
+    body .reloj-mas-vendidos  h2 {
+        font-size: 2.6rem;
+    }
+
+    body .main .titulo-arriba-container-items h2,
+    body .info__inicio--container .info__inicio--text h1,
+    .reloj-mas-vendidos .item-reloj-vendidos h3 {
+        font-size: 2rem;
+    }
+
+    body .container-all-reloj-vendidos .reloj-container-mas-vendidos .item-reloj-vendidos p{
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+
+    .reloj-mas-vendidos .container-all-reloj-vendidos .reloj-container-mas-vendidos .mobile-button button,
+    body .compras-seguras p,
+    .nav-logo,
+    body .info__inicio--container .info__inicio--text p {
+        font-size: 1.4rem;
+    }
+
+    body .info__inicio--container .info__inicio--text p{
+        text-align: left;
+    }
+
+    .btn-mas-prodcutos-container .boton-mas-productos{
+        font-size: 1.6rem;
+    }
+
+    .nav-container .hamburger-cont i {
+        font-size: 2.6rem;
+    }
+
+    body .compras-seguras h3 {
+        font-size: 2rem;
+    }
+
+    body .search-mobile-container button i {
+        display: none;
+    }
+
+    body .container-links-mobile .container-ul-links-mobile .search-mobile-container input {
+        padding: .5rem;
+    }
+
+    body .container-links-mobile .container-ul-links-mobile .links-mobile li a{
+        font-size: 1.6rem;
+    }
+
+    body .footer-certificacion p {
+        padding: 0;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    body .footer-info-redes p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    body .redes-sociales{ 
+        font-size: 3rem;
+        justify-content: space-evenly;
+    }
+
+    body .footer .footer-container {
+        max-width: 90%;
+    }
+
+    .footer .end-footer p {
+        max-width: 80%;
+    }
+}
+
+/* -991px
+.info__inicio--img img{
+    max-width: 100%;
+    width: 30rem;
+} */

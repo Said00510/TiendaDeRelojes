@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+/*Globales*/
+:root {
+    --slide-transform: 0;
+    --transition: transform 1s;
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a{text-decoration: none;}
+ul{list-style-type: none;}
+
+/*Observer imgs*/
+.observer-img{
+	overflow: hidden;
+    opacity: 0;
+	transform: scale(0.9);
+	transition: all 1s ease-in-out;
+}
+
+.observer-img.visible{
+    opacity: 1;
+	transform: scale(1);
+}
+
+/*Slider*/
+.slider-container{
+    overflow: hidden;
+}
+
+.slider--inn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: 1s ease-out;
+}
+
+.slider--inn img {
+    max-width: 100%; 
+    width: 100%;    /*Pantallas 1920 x 1080 aspect-ratio: 16 / 9;  object-fit: cover;*/
+    object-fit: cover;
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 768px) { 
+    .slider--inn img {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1050px) { 
+    .slider--inn img{ 
+        margin-top: 0;
+    }
+}
+
+/*Container*/
+.main {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    max-width: 120rem;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    contain: paint;
+}
+
+.info {
+    width: 100%;
+    padding: 7rem 0;
+}
+
+.info__inicio--text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.info__inicio--text h1{
+    font-size: 7rem;
+}
+
+.info__inicio--text p{
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+.info__inicio--comprar{
+    border: none;
+    color: #fff;
+    background-color: #673B1C;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 20rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.info__inicio--comprar:hover {
+    transition: .3s ease-in;
+    background-color: #3A2110;
+}
+
+.info__inicio--container .inicio__img--destkop,
+.info__inicio--container .inicio__img{
+    display: none;
+}
+
+.info__inicio--container .inicio__img{
+    margin-top: 3rem;
+}
+
+.info__inicio--container .inicio__img img {
+    max-width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.info__inicio--img img{
+    max-width: 100%;
+    height: 63rem;    
+}
+
+/*Contenedor itmes*/
+.container-all-items{
+    padding: 5rem 0;
+}
+
+.titulo-arriba-container-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.titulo-arriba-container-items h2{ 
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #121212;
+    text-align: center;
+}
+
+.contenedor-items .item {
+    border: 1px solid #ccc;
+    max-width: 100%;
+    width: 320px;
+}
+
+.contenedor-items .item img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+.contenedor-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-info-container .item__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.item-info-container .item__precio {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.item-info-container .item__agregar__boton {
+    border: none;
+    cursor: pointer;
+    color: #000;
+    background-color: #A08783;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.item-info-container .item__agregar__boton:hover{
+    background-color: #82706c;
+}
+
+.btn-mas-prodcutos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.boton-mas-productos{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    padding: 2rem;
+    font-size: 2rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.boton-mas-productos:hover {
+    transition: .3s ease-in;
+    background-color: #ccc;
+    color: #000;
+}
+
+/*Pagos seguro info*/
+.compras-seguras{
+    padding-top: 10rem;
+}
+
+.compras-seguras h3,
+.compras-seguras p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.compras-seguras h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.compras-seguras p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.compras-seguras-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.compras-seguras-container img {
+    max-width: 100%;
+    width: 300px;
+}
+
+.metodos-de-pago{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-metodo-pago {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.contenedor-meotodo-pago{margin: 1rem 0; }
+
+.contenedor-meotodo-pago h2{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.contenedor-meotodo-pago img{
+    max-width: 100%;
+    width: 400px;
+}
+
+/*Relojes mas vendidos*/
+.reloj-mas-vendidos{padding: 5rem 0;}
+
+.reloj-mas-vendidos h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 3rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reloj-container-mas-vendidos{
+    padding: 3rem 0;
+}
+
+.item-reloj-vendidos h3 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.item-reloj-vendidos p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 500;
+
+}
+
+.item-img-reloj-vendidos--mobile img {
+    width: 60rem;
+}
+
+.item-reloj-vendidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+.reloj-mas-vendidos .container-all-reloj-vendidos .reloj-container-mas-vendidos .item-reloj-vendidos .deskopt-button{
+    display: none;
+}
+
+.reloj-mas-vendidos .container-all-reloj-vendidos .reloj-container-mas-vendidos .mobile-button button{
+    display: none ;
+}
+
+.reloj-mas-vendidos .container-all-reloj-vendidos .reloj-container-mas-vendidos .mobile-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0 2rem 0
+}
+
+.item-img-reloj-vendidos img{
+    height: 50rem;
+    width: 50rem;
+}
+
+.container-all-reloj-vendidos .reloj-container-mas-vendidos .item-img-reloj-vendidos--mobile img{
+    display: none;
+}
+
+.container-all-reloj-vendidos .reloj-container-mas-vendidos .item-img-reloj-vendidos--mobile img{
+    max-width: 100%;
+    border-radius: 3.2rem;
+    margin: 0 auto;
+}
+
+/* Carrusel */
+.carrusel-marcas {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.carrusel-container {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.carrusel-item {
+    max-width: 100%;
+    min-width: 30rem;
+    outline: 1px solid #ccc;
+    cursor: pointer;
+    position: relative; /* Asegurémonos de que los elementos del carrusel tengan una posición relativa */
+    overflow: hidden; /* Ocultar cualquier contenido que se salga del contenedor */
+}
+
+.carrusel-item img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-item::before {
+    /* Estilos para el pseudoelemento ::before que cubrirá la imagen */
+    content: ""; /* Asegurémonos de que el pseudoelemento tenga contenido */
+    position: absolute; /* Lo posicionamos encima de la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+    opacity: 0; /* Comenzamos con opacidad 0 para que no sea visible inicialmente */
+    transition: opacity 0.4s ease-in-out; /* Transición suave de la opacidad */
+}
+
+.carrusel-item:hover::before {
+    /* Estilos del pseudoelemento ::before al pasar el cursor sobre el carrusel-item (imagen) */
+    opacity: 1; /* Opacidad completa (100%) para hacer visible el fondo negro */
+}  
+
+.carrusel-item img:hover {
+    transform: scale(1.2);
+    padding: calc(3rem + 3px); /* Expandimos el padding 3rem (más 3px para compensar el outline) */
+}
+
+/*ITEMS DENTRO DE CARRUSEL*/
+.dentro-carrusel-cont{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    visibility: hidden;
+    transform: scale(0);
+}
+
+.dentro-carrusel-cont.visiblecarrusel{
+    visibility: visible;
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+}
+
+.dentro-carrusel-cont p{
+    color: #fff;
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-carrusel-leermas{
+    border: none;
+    background-color: transparent;
+}
+
+.btn-carrusel-leermas a{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.btn-carrusel-leermas a:hover { text-decoration: underline;}
+
+.titulo-marcas {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 6rem;
+}
+
+/*Footer*/
+
+
+
+.footer-certificacion{
+    max-width: 100%;
+    width: 30rem;
+}
+
+.footer-titulos {
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer-certificacion p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    padding: 0 0 1rem 3rem;
+}
+
+.footer-certificacion img {
+    max-width: 100%;
+    width: 30rem;
+}
+
+.footer-info-redes p{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.info-redes-interes-enlaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: circle;
+    column-gap: 2rem;
+}
+
+.info-redes-interes-enlaces li a {
+    color: #121212;
+    font-size: 1.2rem;
+}
+
+.info-redes-interes-enlaces li a:hover {text-decoration: underline;}
+.atencion-cont{padding: 2rem 0;}
+
+.redes-sociales{
+    padding: 3rem 0;
+    font-size: 3.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociales span i{
+    cursor: pointer;
+    color: #000;
+}
+
+.politicas-footer ul li{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.politicas-footer ul li a{
+    color: #000;
+}
+
+.politicas-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.politicas-footer ul li:last-child{
+    margin-top: 1rem;
+}
+
+.end-footer{
+    margin-top: 2rem;
+    background-color: #000;
+    height: 5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.end-footer p {
+    font-size: 1.4rem;
+}
+
+.img-corp{
+    margin: 0;
+    padding: 0;
+}
+
+.img-corp img {
+    max-width: 100%;
+}
+
+.span-apolo-titulo-footer {
+    font-weight: 400;
+}
+
+/*RESPONSIVE*/

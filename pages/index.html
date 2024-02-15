@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="../vendor/boostrap/bootstrap.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/carrito.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ApoloComporation - Tienda de relojes de lujo</title>
+</head>
+<body>
+    
+        <div class="nav-container">
+
+                <div class="hamburger-cont">
+                    <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+                </div> 
+
+                <div class="nav-logo color-change">
+                    <span>Apolo</span><span class="span-cambio-color">Corporation</span></span>
+                </div>
+
+                
+                <div class="container-links">
+                    <ul class="ul-links">
+                            <li><a class="color-change mx-2" href="#">Destacado</a></li>
+                            <li><a class="color-change dropdown-toggle mx-2 nav-item"  id="hombres-info" href="#">Hombre</a></li>
+                            <li><a class="color-change dropdown-toggle mx-2 nav-item"  id="mujer-info" href="#">Mujer</a></li>
+                            <li><a class="color-change dropdown-toggle mx-2 nav-item"  id="novedades-info" href="#">Novedades</a></li>
+                            <li><a class="color-change mx-2" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="carrito-info ">
+
+                    <span class="icons-form__hover-nav-bar--login"><i class="fa-solid fa-circle-user color-change" id="login-btn"></i></span>
+                    <span class="icons-form__hover-nav-bar--search"><i class="fa-solid fa-magnifying-glass color-change" id="icon-search"></i></span>
+                    <span class="icons-form__hover-nav-bar--cart" id="cart-shop"><i class="fa-solid fa-cart-shopping color-change" ></i><b class="numerito-cart">0</b><span class="total-cart">$0,00</span></span>
+   
+                </div>
+
+        </div>
+
+
+
+        <div class="container-links-mobile mobile">
+            <div class="container-ul-links-mobile">
+
+                <div class="search-mobile-container">
+                    <label for="search-mobile">
+                        <input type="search" placeholder="Buscar...">
+                        <button type="submit"> <i class="fa-solid fa-magnifying-glass"  title="Buscar"></i></button>
+                    </label>
+               </div>
+
+
+                <ul class="links-mobile">
+                    <li><a class="text-dark" href="#"><i class="fa-solid fa-house-chimney"></i>Inicio</a></li>
+                    <li><a class="text-dark" href="#"><i class="fa-solid fa-bolt"></i>Destacado</a></li>
+                    <li><a class="text-dark" href="#" ><i class="fa-brands fa-slack"></i>Novedades</a></li>
+                    <li><a class="text-dark" href="#" ><i class="fa-solid fa-paper-plane"></i>Contacto</a></li>
+
+                    <li class="menus-dropdwon-mobile mobile-line">
+                        <div class="dropdown-toggle" id="btn-1-mobile">
+                            <a class="text-dark " href="#"><i class="fa-solid fa-palette"></i>Estilos</a>
+                        </div>
+                        <ul class="menu__dropdown-toggle">
+                                <li><a href="#">Elegante</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Deportivo</a></li>
+                                <li><a href="#">Smart</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menus-dropdwon-mobile mobile-line">
+                        <div class="dropdown-toggle" id="btn-2-mobile">
+                            <a class="text-dark " href="#"><i class="fa-brands fa-shopify"></i>Marcas</a>
+                        </div>
+                        <ul class="menu__dropdown-toggle">
+                            <li><a href="#">Rolex</a></li>
+                            <li><a href="#">Casio</a></li>
+                            <li><a href="#">Invicta</a></li>
+                            <li><a href="#">Seiko</a></li>
+                            <li><a href="#">Citizen</a></li>
+                            <li><a href="#">Tissot</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="text-dark" href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Servicio tecnico</a></li>
+                    <li><a class="text-dark" href="#"><i class="fa-solid fa-circle-user"></i>Login/register</a></li>
+                </ul>
+            </div>
+
+            <div class="img-corp">
+                <img loading="lazy" src="../assets/img/marcas/ApoloCorp....png" alt="">
+            </div>
+
+        </div>
+        
+        
+
+        <div class="forms-cont">
+            <div class="account-login-container "> <!--LOGIN FORM START-->
+                <div class="cart-container form-container target-remove">
+                    <div class="top-info-cont">
+                        <h2 class="cart-title">Sign in</h2>
+                        <i class="fa-solid fa-x" id="btn-close-login"></i>
+                    </div>
+                    <hr>
+                    <div class="info-login-search">
+                        <form class="form">
+                            <p class="comer-form__form-cont email-form">
+                                <label for="gmail">Correo electronico:</label>
+                                <input type="email" name="gmail" class="email-form__input" required>
+                            </p>
+                            <p class="comer-form__form-cont pass-form">
+                                <label for="pass">Contraseña:</label>
+                                <input type="password" name="pass" class="pass-form__input" required>
+                            </p>
+                            <p class="comer-form__form-cont comer-form__login-btn">
+                                <button class="btn-login">Iniciar sesión</button>
+                            </p>
+
+                            <p class="login-form-footer">
+                                <a href="#" class="login-form__lost-password">Forgot your password?</a>
+                                <label class="login-form__label">
+                                    <input type="checkbox" title="Remember me" name="Remember me">
+                                    <span class="Remember-me">Remember me</span>
+                                </label>
+                            </p>
+                        </form>
+                        <hr>
+                        <div class="register-account__container">
+                            <i class="fa-solid fa-user icon-register__font"></i>
+                                <p>No tienes una cuenta?</p>
+                                <a href="#" class="register-account__link-account-new">Crea una cuenta</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--LOGIN FORM END-->
+
+
+            <div class="search-container target-remove"> <!--SEARCH START-->
+                <div class="search-info-wapper d-flex mt-4">
+                    <div class="search-info-search px-3 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-magnifying-glass search-btn color-change"  title="Buscar"></i>
+                    </div>
+
+                    <input type="search" name="search" placeholder="Buscar..." id="mySearchInput" class="input-search form-control">
+
+                    <div class="delete-info-search d-flex justify-content-center align-items-center px-3">
+                        <i class="fa-solid fa-x  icon-info-delete" id="clearButton" title="Eliminar"></i>
+                    </div>
+
+                </div>
+
+            </div> <!--SEARCH END-->
+
+
+            <div class="cart-container cart-enjoy target-remove"> <!--CARRITO START-->
+                <div class="top-info-cont">
+                    <h2 class="cart-title">Tú Carrito</h2>
+                    <i class="fa-solid fa-x" id="close-btn-cart"></i>
+                </div>
+
+                <div class="cart-content">
+                    <hr>
+                    <div class="cart-box">
+                        <img loading="lazy" src="../assets/img/relojes/rolex/04.png" alt="" class="cart-img">
+                        <div class="cart-info">
+                            <h3 class="cart-produc-title">Rolex Easier</h3>
+                            <p class="cart-producto-price">80.000$</p>
+                            <input type="number" min="1" pattern="[0-9]+" value="1" class="cart-quanty">
+                        </div>
+                            <!-- Remover -->
+                        <button class="cart-remove"> <i class="fa-solid fa-trash" id="trash-item-remove" ></i></button>
+                    </div>
+                    <hr>
+                </div>
+                <!-- Total -->
+                <div class="cart-total">
+                    <h3 class="total-title">Total:<span class="total-price">$0</span></h3>
+                </div>
+                <!-- Btn buy -->
+                <button type="button" class="btn-buy">Finalizar compra</button>
+            </div>  <!--CARRITO END-->
+        </div>
+
+
+
+
+
+        <!-- HOMBRE DETALLE HOVER -->
+        <div class="hombre-details content">
+            <div class="hombre-details-container d-flex justify-content-evenly">
+                <ul class="hombre-details__estilos">
+                    <h2 class="hombre-details__title">Estilos</h2>
+                    <li><a href="#">Elegantes</a></li>
+                    <li><a href="#">Casuales</a></li>
+                    <li><a href="#">Deportivos</a></li>
+                    <li><a href="#">Unisex</a></li>
+                </ul>
+
+                <ul class="hombre-details__movimiento">
+                    <h2 class="hombre-details__title">Movimiento</h2>
+                    <li><a href="#">Automático</a></li>
+                    <li><a href="#">Digital</a></li>
+                    <li><a href="#">Smart</a></li>
+                </ul>
+
+                <ul class="hombre-details__marcas">
+                    <h2 class="hombre-details__title">Marcas</h2>
+                    <li><a href="#">Rolex</a></li>
+                    <li><a href="#">Casio</a></li>
+                    <li><a href="#">Invicta</a></li>
+                    <li><a href="#">Citizen</a></li>
+                    <li><a href="#">Tissot</a></li>
+                    <li><a href="#">Seiko</a></li>
+                </ul>
+
+                <img loading="lazy" class="hombre-details__img" src="../assets/img/otros img/hombresnavbar.jpg" alt="">
+            </div>
+        </div>
+        <!-- END DE HOMBRES DETALLES HOVER -->
+
+        <!-- MUJERES DETALLES START -->
+        <div class="mujer-details hombre-details content">
+            <div class="hombre-details-container d-flex justify-content-evenly">
+                <ul class="hombre-details__estilos">
+                    <h2 class="hombre-details__title">Estilos</h2>
+                    <li><a href="#">Elegantes</a></li>
+                    <li><a href="#">Casuales</a></li>
+                    <li><a href="#">Deportivos</a></li>
+                    <li><a href="#">Unisex</a></li>
+                </ul>
+
+                <ul class="hombre-details__movimiento">
+                    <h2 class="hombre-details__title">Movimiento</h2>
+                    <li><a href="#">Automático</a></li>
+                    <li><a href="#">Digital</a></li>
+                    <li><a href="#">Smart</a></li>
+                </ul>
+
+                <ul class="hombre-details__marcas">
+                    <h2 class="hombre-details__title">Marcas</h2>
+                    <li><a href="#">Rolex</a></li>
+                    <li><a href="#">Casio</a></li>
+                    <li><a href="#">Invicta</a></li>
+                    <li><a href="#">Citizen</a></li>
+                    <li><a href="#">Tissot</a></li>
+                    <li><a href="#">Seiko</a></li>
+                </ul>
+
+                <img loading="lazy" class="hombre-details__img" src="../assets/img/otros img/mujernavbar.jpg" alt="">
+            </div>
+        </div>
+        <!-- MUJERES DETALLES END -->
+
+        <!-- NOVEDADES START -->
+        <div class="hombre-details novedades-details content">
+            <div class="hombre-details-container novedades-details-container d-flex justify-content-evenly">
+                <h2 class="hombre-details__title novedades-title"><a href="#">Hombres</a></h2>
+                <h2 class="hombre-details__title novedades-title"><a href="#">Mujeres</a></h2>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider--inn">
+                <!-- <img loading="lazy" src="img/slider/header.jpg" alt="Imagen slider" /> -->
+                <img loading="lazy" class="slider-img" src="../assets/img/slider/header1.jpg" alt="Imagen slider" />
+                <!-- <img loading="lazy" src="img/slider/header2.jpg" alt="Imagen slider" /> -->
+                <img loading="lazy" class="slider-img" src="../assets/img/slider/header3.jpg"  class="img-fluid" alt="Imagen slider" />
+                <img loading="lazy" class="slider-img" src="../assets/img/slider/header4.jpg" alt="Imagen slider" />
+                <img loading="lazy" class="slider-img" src="../assets/img/slider/header5.png" alt="Imagen slider" />
+            </div>
+            </div>
+
+            <!-- Terminar -->
+            <!-- <div class="slider-buttons-navegation">
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div> -->
+        
+
+        <main class="main">
+
+                <section class="info">
+                        <div class="info__inicio--container">
+                                <div class="info__inicio--text ">
+                                    <h1>Selecciona tu nuevo<br>Estilo preferido</h1>
+                                    <p>Explora la exclusiva colección de relojes que hemos preparado para ti. Desde clásicos elegantes hasta diseños audaces y modernos, encuentra el complemento perfecto para realzar tu estilo único. Nuestros relojes destacan por su exquisito diseño y la última tecnología, 
+                                        garantizando calidad y durabilidad inigualables. Nuestro equipo de expertos en moda está listo para asesorarte y ayudarte a encontrar el reloj que encaje perfectamente con tu personalidad. No esperes más para elevar tu estilo al siguiente nivel y llevarte contigo una
+                                         obra de arte atemporal que te acompañará en cada momento de tu vida. ¡Visítanos y descubre la emoción de elegir un reloj que trascienda el tiempo y refleje tu esencia única!
+                                    </p>
+                                    <button class="info__inicio--comprar">Comprar ahora</button>
+                                </div>
+
+                            <div class="info__inicio--img inicio__img--destkop">
+                                <img loading="lazy" id="img-ob1" src="../assets/img/reloj web/portada1.png" alt="Portada de reloj">
+                            </div>
+
+                            <div class="info__inicio--img--mobile inicio__img">
+                                <img loading="lazy" id="img-ob1-mobile" src="../assets/img/otros img/poratadaMobileInicio.jpg" alt="Portada persona con reloj">
+                            </div>
+                        </div>
+                </section>
+
+                <div class="titulo-arriba-container-items">
+                    <h2>Productos mas populares!</h2>
+                </div>
+
+                <section class="container-all-items">
+
+                        <!-- Contenedor de elementos productos-->
+                        <div class="contenedor-items container">
+                           <!-- Se completa con el JS -->
+                        </div>
+                        <div class="btn-mas-prodcutos-container">
+                            <a class="boton-mas-productos" href="productos/productos.html">Mas productos</a>
+                       </div>
+                </section>  
+
+
+
+
+                
+                <section class="reloj-mas-vendidos">
+                    <h2>¡Mas vendidos!
+                    </h2>
+                        <div class="container-all-reloj-vendidos">
+                            <div class="reloj-container-mas-vendidos">
+                                    <div class="item-reloj-vendidos">
+                                        <h3>Rolex datejust</h3>
+                                        <p>El Rolex Datejust es altamente buscado por aquellos que buscan una combinación de estilo clásico y funcionalidad moderna. La versatilidad de este reloj lo convierte en una opción popular para cualquier ocasión, desde eventos formales hasta el uso diario. Su distintiva ventana de fecha a las 3 en punto y los marcadores de hora luminiscentes ofrecen una legibilidad excepcional. 
+                                            Además, la amplia gama de opciones de diseño, incluyendo cajas de acero inoxidable, oro y platino, permite a los usuarios personalizar su elección según sus preferencias. Los entusiastas de la relojería aprecian el mecanismo Perpetual de Rolex, que garantiza una precisión excepcional y durabilidad a lo largo del tiempo. El Rolex Datejust es recomendado por su legado histórico, calidad suiza inigualable y como una declaración de buen gusto y elegancia en la industria relojera.</p>
+                                        <div class="button-reloj-vendidos deskopt-button">
+                                            <button class="info__inicio--comprar">Comprar ahora</button>
+                                        </div>    
+                                    </div>
+                                
+                                        <div class="item-img-reloj-vendidos ">
+                                            <img  loading="lazy" id="img-ob2" class="observer-img" src="../assets/img/reloj web/Rolex datejust.webp" title="Rolex datejust" alt="Reloj mas vendido">
+                                        </div>
+
+                                    <div class="item-img-reloj-vendidos--mobile">
+                                        <img loading="lazy" id="img-ob2--mobile" src="../assets/img/otros img/rolexdajustMobile.webp" title="Rolex datejust" alt="Reloj mas vendido">
+                                    </div>
+
+                                    <div class="button-reloj-vendidos mobile-button">
+                                        <button class="info__inicio--comprar">Comprar ahora</button>
+                                    </div> 
+
+                            </div>        
+                            
+                            <div class="reloj-container-mas-vendidos">
+                                    <div class="item-reloj-vendidos">
+                                        <h3>Rolex lady datejust</h3>
+                                        <p>El Rolex Lady Datejust es una elección elegante y sofisticada para las mujeres que buscan un reloj de lujo. Con su diseño refinado y femenino, este reloj encarna la combinación perfecta de belleza y funcionalidad. Disponible en una variedad de estilos y materiales, incluyendo oro y acero inoxidable, el Lady Datejust es una declaración de lujo y buen gusto. 
+                                            Su ventana de fecha a las 3 en punto y marcadores luminosos garantizan una legibilidad óptima. La confiabilidad del mecanismo de cuerda automática Perpetual de Rolex lo convierte en un accesorio duradero y preciso para acompañar a las mujeres en todas las ocasiones. Recomendado por su prestigiosa marca y artesanía impecable, el Rolex Lady Datejust es una elección atemporal y distinguida que complementa el estilo de vida de la mujer moderna con elegancia y refinamiento.</p>
+                                            <div class="button-reloj-vendidos deskopt-button">
+                                                <button class="info__inicio--comprar">Comprar ahora</button>
+                                            </div>  
+                                    </div>
+                                    <div class="item-img-reloj-vendidos">
+                                        <img loading="lazy" id="img-ob3" class="observer-img" src="../assets/img/reloj web/Rolex lady datejust.png" title="Rolex lady datejust" alt="Reloj mas vendido">
+                                    </div>
+
+
+                                    <div class="item-img-reloj-vendidos--mobile">
+                                        <img loading="lazy" id="img-ob3--mobile" src="../assets/img/otros img/rolexdajustWomenMobile.webp" title="Rolex datejust" alt="Reloj mas vendido">
+                                    </div>
+                                    <div class="button-reloj-vendidos mobile-button">
+                                        <button class="info__inicio--comprar">Comprar ahora</button>
+                                    </div> 
+
+                            </div>        
+
+                            <div class="reloj-container-mas-vendidos">
+                                <div class="item-reloj-vendidos">
+                                    <h3>Rolex Day-Date de Oyster</h3>
+                                    <p>Destacado por su icónica caja Oyster de oro o platino, este reloj es altamente reconocible y símbolo de estatus. Su característica más distintiva es la ventana de día a las 12 en punto, 
+                                        que muestra el día completo de la semana en varios idiomas. Además, ofrece una ventana de fecha a las 3 en punto para una mayor funcionalidad. El movimiento automático Perpetual de Rolex garantiza una precisión excepcional y una reserva de marcha duradera. El Rolex Day-Date de Oyster es ampliamente recomendado por coleccionistas y conocedores de la relojería debido a su rica herencia, elegancia intemporal y la exclusividad que representa ser el reloj de líderes y personalidades influyentes en todo el mundo.</p>
+                                        <div class="button-reloj-vendidos deskopt-button">
+                                            <button class="info__inicio--comprar">Comprar ahora</button>
+                                        </div>  
+                                </div>
+                                <div class="item-img-reloj-vendidos">
+                                    <img loading="lazy" id="img-ob4" class="observer-img" src="../assets/img/reloj web/rolex submariner.jpg"  title="Rolex Day-Date de Oyster" alt="Reloj mas vendido">
+                                </div>   
+
+                                <div class="item-img-reloj-vendidos--mobile">
+                                    <img loading="lazy" id="img-ob4--mobile" src="../assets/img/otros img/rolexDay-DateDeOyster.webp" title="Rolex datejust" alt="Reloj mas vendido">
+                                </div>
+                                <div class="button-reloj-vendidos mobile-button">
+                                    <button class="info__inicio--comprar">Comprar ahora</button>
+                                </div> 
+                            </div>    
+                        </div>
+
+                </section>
+            
+                <hr>
+
+            <section class="section-marcas">
+                <h2 class="titulo-marcas">Marcas que manejamos!</h2>
+
+
+                <div class="carrusel-marcas">
+                    <div class="carrusel-container">
+                        <div class="carrusel-item">
+                            <div class="dentro-carrusel-cont">
+                                <p class="item-dentro-carrusel">Casio</p>
+                                <button class="btn-carrusel-leermas"><a href="#"><i class="fa-solid fa-angles-right"></i>Leer mas</a></button>
+                            </div>
+                            <img loading="lazy" src="../assets/img/marcas/casio.jpg" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <div class="dentro-carrusel-cont">
+                                <p class="item-dentro-carrusel">Invicta</p>
+                                <button class="btn-carrusel-leermas"><a href="#"><i class="fa-solid fa-angles-right"></i>Leer mas</a></button>
+                            </div>
+                            <img loading="lazy" src="../assets/img/marcas/invicta.jpg" alt="">
+                        </div>
+
+                        <div class="carrusel-item">
+                            <div class="dentro-carrusel-cont">
+                                <p class="item-dentro-carrusel">Citizen</p>
+                                <button class="btn-carrusel-leermas"><a href="#"><i class="fa-solid fa-angles-right"></i>Leer mas</a></button>
+                            </div>
+                            <img loading="lazy" src="../assets/img/marcas/citizen.jpg" alt="">
+                        </div>
+
+                        <div class="carrusel-item">
+                            <div class="dentro-carrusel-cont">
+                                <p class="item-dentro-carrusel">Seiko</p>
+                                <button class="btn-carrusel-leermas"><a href="#"><i class="fa-solid fa-angles-right"></i>Leer mas</a></button>
+                            </div>
+                            <img loading="lazy" src="../assets/img/marcas/seiko.jpg" alt="">
+                        </div>
+
+                        <div class="carrusel-item">
+                            <div class="dentro-carrusel-cont">
+                                <p class="item-dentro-carrusel">Rolex</p>
+                                <button class="btn-carrusel-leermas"><a href="#"><i class="fa-solid fa-angles-right"></i>Leer mas</a></button>
+                            </div>
+                            <img loading="lazy" src="../assets/img/marcas/rolex.jpg" alt="">
+                        </div>
+
+                        <div class="carrusel-item">
+                            <div class="dentro-carrusel-cont">
+                                <p class="item-dentro-carrusel">Tissot</p>
+                                <button class="btn-carrusel-leermas"><a href="#"><i class="fa-solid fa-angles-right"></i>Leer mas</a></button>
+                            </div>
+                            <img loading="lazy" src="../assets/img/marcas/tisot.webp" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+                
+            <div class="compras-seguras">
+                <h3>Compra seguro con nuestros servicios</h3>
+                <p>Envios 100% seguros a nivel nacional con garantia incluida</p>
+                <div class="compras-seguras-container">
+                    <img loading="lazy" src="../assets/img/reloj web/pagosegur1.webp" alt="envio seguro">
+                    <img loading="lazy" src="../assets/img/reloj web/pagosegur2.webp" alt="envio seguro">
+                    <img loading="lazy" src="../assets/img/reloj web/pagosegur13webp.webp" alt="envio seguro">
+                    <img loading="lazy" src="../assets/img/reloj web/pagosegur4.webp" alt="envio seguro">
+                </div>
+
+                <h2 class="titulo-metodo-pago">Métodos de pago</h2>
+
+                <div class="metodos-de-pago">
+                    <div class="contenedor-meotodo-pago">
+                        <h2>Tarjetas de crédito </h2>
+                        <img loading="lazy" src="../assets/img/info envios/credito.jpg" alt="Tarjeta de credito">
+                    </div>
+
+                    <div class="contenedor-meotodo-pago">
+                        <h2>Tarjetas de débito </h2>
+                        <img loading="lazy" src="../assets/img/info envios/debito.jpg" alt="Tarjeta de credito">
+                    </div>
+
+                    <div class="contenedor-meotodo-pago">
+                        <h2>Transferencias bancarias</h2>
+                        <img loading="lazy" src="../assets/img/info envios/transferencia.jpg" alt="Tarjeta de credito">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="img-corp">
+            <img loading="lazy" src="../assets/img/marcas/ApoloCorp....png" alt="">
+        </div>
+        <hr>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-certificacion">
+                    <ul>
+                        <h2 class="footer-titulos" ><span class="span-apolo-titulo-footer">Apolo</span><span  class="span-cambio-color">Corporation</span> </h2>
+                        <p>Comprometidos en presentar a nuestros clientes las últimas tendencias y tecnologias de relojes, como representantes y distribuidores de las marcas del mercado de lujo.<br><br>
+                            Contamos con garantía internacional y servicio técnico especializado.<br><br>                 
+                            TIENDA CERTIFICADA</p>
+
+                         <img loading="lazy" src="../assets/img/info envios/tiendacertificada.png" alt="Certificacion de tienda">   
+                    </ul>
+                </div>
+
+    
+                <div class="footer-info-redes">
+                    <h2 class="footer-titulos" >Enlances de interes</h2>
+                    <ul class="info-redes-interes-enlaces">
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Nuestra Historia</a></li>
+                        <li><a href="#">CEO de la compañia</a></li>
+                        <li><a href="#">Reseñas</a></li>
+                    </ul>
+    
+                    <div class="atencion-cont">
+                        <h2 class="footer-titulos atencion" >Atención!</h2>
+                        <p>+593734092315 | example@gmail.com</p>
+                    </div>
+
+    
+                    <div class="redes-sociales">
+                        <span><a href="#"><i style="color:#00acee" class="fa-brands fa-twitter"></i></a></span>
+                        <span><a href="#"><i style="color:#3b5998 " class="fa-brands fa-facebook"></i></a></span>
+                        <span><a href="#"><i style="color:#C13584" class="fa-brands fa-instagram"></i></a></span>
+                        <span><a href="#"><i style="color:#c4302b" class="fa-brands fa-youtube"></i></a></span>
+                    </div>
+                </div>
+    
+                <div class="politicas-footer">
+                    <ul>
+                        <h2 class="footer-titulos">Politicas & Condiciones</h2>
+                            <li><a href="#">Terminos y Condiciones</a></li>
+                            <li><a href="#">Politicas de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="end-footer">
+                <p>Copyright© ApoloCorporation 2023 - All rights reserved. </p>
+            </div>
+
+
+        </footer>
+ 
+        <div class="menu-mobile d-flex justify-content-between align-items-center bg-light p-3">
+            <span class=""><i class="fa-solid fa-circle-user color-change" id="login-btn-mb"></i></span>
+            <span class="store-mb" id="cart-shop-mb"><i class="fa-solid fa-store color-change" ></i><b class="numerito-cart--mobile">0</b></span>
+
+            
+            <span class=""><i class="fa-solid fa-basket-shopping" id="tienda-mb-btn"></i></span>
+            <span class="favorite-mobile"><i class="fa-solid fa-heart"></i></span>
+        </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/navInfoI.js"></script>
+    <script src="../assets/js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="../../vendor/boostrap/bootstrap.min.css">
+     <!-- Css -->
+     <link rel="stylesheet" href="../../assets/css/navbar.css">
+     <link rel="stylesheet" href="../../assets/css/style.css">
+     <link rel="stylesheet" href="../../assets/css/carrito.css">
+     <link rel="stylesheet" href="../../assets/css/productos.css">
+      <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ApoloComporation-todos los productos</title>
+</head>
+<body>
+
+    <div class="nav-container">
+
+        <div class="hamburger-cont">
+            <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+        </div> 
+
+        <div class="nav-logo color-change link">
+            <a class="nav-logo link__index" href="../index.html"><span>Apolo</span><span class="span-cambio-color">Corporation</span></span></a>
+        </div>
+
+
+
+        
+        <div class="container-links">
+            <ul class="ul-links">
+                    <li><a class="color-change mx-2" href="#">Destacado</a></li>
+                    <li><a class="color-change dropdown-toggle mx-2 nav-item"  id="hombres-info" href="#">Hombre</a></li>
+                    <li><a class="color-change dropdown-toggle mx-2 nav-item"  id="mujer-info" href="#">Mujer</a></li>
+                    <li><a class="color-change dropdown-toggle mx-2 nav-item"  id="novedades-info" href="#">Novedades</a></li>
+                    <li><a class="color-change mx-2" href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="carrito-info ">
+
+            <span class="icons-form__hover-nav-bar--login"><i class="fa-solid fa-circle-user color-change" id="login-btn"></i></span>
+            <span class="icons-form__hover-nav-bar--search"><i class="fa-solid fa-magnifying-glass color-change" id="icon-search"></i></span>
+            <span class="icons-form__hover-nav-bar--cart" id="cart-shop"><i class="fa-solid fa-cart-shopping color-change" ></i><b class="numerito-cart">0</b><span class="total-cart">$0,00</span></span>
+
+        </div>
+
+</div>
+
+
+
+<div class="container-links-mobile">
+    <div class="container-ul-links-mobile">
+
+        <div class="search-mobile-container">
+            <label for="search-mobile">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit"> <i class="fa-solid fa-magnifying-glass"  title="Buscar"></i></button>
+            </label>
+       </div>
+
+
+        <ul class="links-mobile">
+            <li><a class="text-dark" href="#"><i class="fa-solid fa-house-chimney"></i>Inicio</a></li>
+            <li><a class="text-dark" href="#"><i class="fa-solid fa-bolt"></i>Destacado</a></li>
+            <li><a class="text-dark" href="#" ><i class="fa-brands fa-slack"></i>Novedades</a></li>
+            <li><a class="text-dark" href="#" ><i class="fa-solid fa-paper-plane"></i>Contacto</a></li>
+
+            <li class="menus-dropdwon-mobile mobile-line">
+                <div class="dropdown-toggle" id="btn-1-mobile">
+                    <a class="text-dark " href="#"><i class="fa-solid fa-palette"></i>Estilos</a>
+                </div>
+                <ul class="menu__dropdown-toggle">
+                        <li><a href="#">Elegante</a></li>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Deportivo</a></li>
+                        <li><a href="#">Smart</a></li>
+                </ul>
+            </li>
+
+            <li class="menus-dropdwon-mobile mobile-line">
+                <div class="dropdown-toggle" id="btn-2-mobile">
+                    <a class="text-dark " href="#"><i class="fa-brands fa-shopify"></i>Marcas</a>
+                </div>
+                <ul class="menu__dropdown-toggle">
+                    <li><a href="#">Rolex</a></li>
+                    <li><a href="#">Casio</a></li>
+                    <li><a href="#">Invicta</a></li>
+                    <li><a href="#">Seiko</a></li>
+                    <li><a href="#">Citizen</a></li>
+                    <li><a href="#">Tissot</a></li>
+                </ul>
+            </li>
+            <li><a class="text-dark" href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Servicio tecnico</a></li>
+            <li><a class="text-dark" href="#"><i class="fa-solid fa-circle-user"></i>Login/register</a></li>
+        </ul>
+    </div>
+
+    <div class="img-corp">
+        <img loading="lazy" src="../../assets/img/marcas/ApoloCorp....png" alt="">
+    </div>
+
+</div>
+
+
+
+<div class="forms-cont">
+    <div class="account-login-container "> <!--LOGIN FORM START-->
+        <div class="cart-container form-container target-remove">
+            <div class="top-info-cont">
+                <h2 class="cart-title">Sign in</h2>
+                <i class="fa-solid fa-x" id="btn-close-login"></i>
+            </div>
+            <hr>
+            <div class="info-login-search">
+                <form class="form">
+                    <p class="comer-form__form-cont email-form">
+                        <label for="gmail">Correo electronico:</label>
+                        <input type="email" name="gmail" class="email-form__input" required>
+                    </p>
+                    <p class="comer-form__form-cont pass-form">
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" name="pass" class="pass-form__input" required>
+                    </p>
+                    <p class="comer-form__form-cont comer-form__login-btn">
+                        <button class="btn-login">Iniciar sesión</button>
+                    </p>
+
+                    <p class="login-form-footer">
+                        <a href="#" class="login-form__lost-password">Forgot your password?</a>
+                        <label class="login-form__label">
+                            <input type="checkbox" title="Remember me" name="Remember me">
+                            <span class="Remember-me">Remember me</span>
+                        </label>
+                    </p>
+                </form>
+                <hr>
+                <div class="register-account__container">
+                    <i class="fa-solid fa-user icon-register__font"></i>
+                        <p>No tienes una cuenta?</p>
+                        <a href="#" class="register-account__link-account-new">Crea una cuenta</a>
+                </div>
+            </div>
+        </div>
+    </div> <!--LOGIN FORM END-->
+
+
+    <div class="search-container target-remove"> <!--SEARCH START-->
+        <div class="search-info-wapper d-flex mt-4">
+            <div class="search-info-search px-3 d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-magnifying-glass search-btn color-change"  title="Buscar"></i>
+            </div>
+
+            <input type="search" name="search" placeholder="Buscar..." id="mySearchInput" class="input-search form-control">
+
+            <div class="delete-info-search d-flex justify-content-center align-items-center px-3">
+                <i class="fa-solid fa-x  icon-info-delete" id="clearButton" title="Eliminar"></i>
+            </div>
+
+        </div>
+
+    </div> <!--SEARCH END-->
+
+
+    <div class="cart-container cart-enjoy target-remove"> <!--CARRITO START-->
+        <div class="top-info-cont">
+            <h2 class="cart-title">Tú Carrito</h2>
+            <i class="fa-solid fa-x" id="close-btn-cart"></i>
+        </div>
+
+        <div class="cart-content">
+            <hr>
+            <div class="cart-box">
+                <img loading="lazy" src="../assets/img/relojes/rolex/04.png" alt="" class="cart-img">
+                <div class="cart-info">
+                    <h3 class="cart-produc-title">Rolex Easier</h3>
+                    <p class="cart-producto-price">80.000$</p>
+                    <input type="number" min="1" pattern="[0-9]+" value="1" class="cart-quanty">
+                </div>
+                    <!-- Remover -->
+                <button class="cart-remove"> <i class="fa-solid fa-trash" id="trash-item-remove" ></i></button>
+            </div>
+            <hr>
+        </div>
+        <!-- Total -->
+        <div class="cart-total">
+            <h3 class="total-title">Total:<span class="total-price">$0</span></h3>
+        </div>
+        <!-- Btn buy -->
+        <button type="button" class="btn-buy">Finalizar compra</button>
+    </div>  <!--CARRITO END-->
+</div>
+
+
+<!-- HOMBRE DETALLE HOVER -->
+<div class="hombre-details content">
+    <div class="hombre-details-container d-flex justify-content-evenly">
+        <ul class="hombre-details__estilos">
+            <h2 class="hombre-details__title">Estilos</h2>
+            <li><a href="#">Elegantes</a></li>
+            <li><a href="#">Casuales</a></li>
+            <li><a href="#">Deportivos</a></li>
+            <li><a href="#">Unisex</a></li>
+        </ul>
+
+        <ul class="hombre-details__movimiento">
+            <h2 class="hombre-details__title">Movimiento</h2>
+            <li><a href="#">Automático</a></li>
+            <li><a href="#">Digital</a></li>
+            <li><a href="#">Smart</a></li>
+        </ul>
+
+        <ul class="hombre-details__marcas">
+            <h2 class="hombre-details__title">Marcas</h2>
+            <li><a href="#">Rolex</a></li>
+            <li><a href="#">Casio</a></li>
+            <li><a href="#">Invicta</a></li>
+            <li><a href="#">Citizen</a></li>
+            <li><a href="#">Tissot</a></li>
+            <li><a href="#">Seiko</a></li>
+        </ul>
+
+        <img loading="lazy" class="hombre-details__img" src="../../assets/img/otros img/hombresnavbar.jpg" alt="">
+    </div>
+</div>
+<!-- END DE HOMBRES DETALLES HOVER -->
+
+<!-- MUJERES DETALLES START -->
+<div class="mujer-details hombre-details content">
+    <div class="hombre-details-container d-flex justify-content-evenly">
+        <ul class="hombre-details__estilos">
+            <h2 class="hombre-details__title">Estilos</h2>
+            <li><a href="#">Elegantes</a></li>
+            <li><a href="#">Casuales</a></li>
+            <li><a href="#">Deportivos</a></li>
+            <li><a href="#">Unisex</a></li>
+        </ul>
+
+        <ul class="hombre-details__movimiento">
+            <h2 class="hombre-details__title">Movimiento</h2>
+            <li><a href="#">Automático</a></li>
+            <li><a href="#">Digital</a></li>
+            <li><a href="#">Smart</a></li>
+        </ul>
+
+        <ul class="hombre-details__marcas">
+            <h2 class="hombre-details__title">Marcas</h2>
+            <li><a href="#">Rolex</a></li>
+            <li><a href="#">Casio</a></li>
+            <li><a href="#">Invicta</a></li>
+            <li><a href="#">Citizen</a></li>
+            <li><a href="#">Tissot</a></li>
+            <li><a href="#">Seiko</a></li>
+        </ul>
+
+        <img loading="lazy" class="hombre-details__img" src="../../assets/img/otros img/mujernavbar.jpg" alt="">
+    </div>
+</div>
+<!-- MUJERES DETALLES END -->
+
+<!-- NOVEDADES START -->
+<div class="hombre-details novedades-details content">
+    <div class="hombre-details-container novedades-details-container d-flex justify-content-evenly">
+        <h2 class="hombre-details__title novedades-title"><a href="#">Hombres</a></h2>
+        <h2 class="hombre-details__title novedades-title"><a href="#">Mujeres</a></h2>
+    </div>
+</div>
+
+
+
+    <!-- JavaScirpt -->
+    <script src="../../vendor/boostrap/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/navInfoI.js"></script>
+    <script src="../../assets/js/index.js"></script>
+</body>
+</html>

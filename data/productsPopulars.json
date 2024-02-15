@@ -1,0 +1,93 @@
+[
+    {
+        "id": "reloj-01",
+        "titulo": "Relox Rolex",
+        "imagen": "../assets/img/relojes/rolex/01.png",
+        "categoria": {
+            "nombre": "Rolexs",
+            "id": "rolex"
+        },
+        "precio":  "15.000"
+    },
+    {
+        "id": "reloj-02",
+        "titulo": "Rolex Dajamod",
+        "imagen": "../assets/img/relojes/rolex/02.png",
+        "categoria": {
+            "nombre": "Rolexs",
+            "id": "rolex"
+        },
+        "precio":  "25.000"
+    },
+    {
+        "id": "reloj-03",
+        "titulo": "Rolex OneDiamond",
+        "imagen": "../assets/img/relojes/rolex/04.png",
+        "categoria": {
+            "nombre": "Rolexs",
+            "id": "rolex"
+        },
+        "precio":  "100.000"
+    },
+    {
+        "id": "reloj-04",
+        "titulo": "Tissot Transform",
+        "imagen": "../assets/img/relojes/tissot/02.jpg",
+        "categoria": {
+            "nombre": "Rolexs",
+            "id": "rolex"
+        },
+        "precio":  "1.000"
+    },
+    {
+        "id": "reloj-05",
+        "titulo": "Tissot Blander",
+        "imagen": "../assets/img/relojes/tissot/03.jpg",
+        "categoria": {
+            "nombre": "Rolexs",
+            "id": "rolex"
+        },
+        "precio":  "5.400"
+    },
+    {
+        "id": "reloj-06",
+        "titulo": "Invicta Reform",
+        "imagen": "../assets/img/relojes/Invicta/01.jpg",
+        "categoria": {
+            "nombre": "Rolexs",
+            "id": "rolex"
+        },
+        "precio":  "2.000"
+    },
+    {
+        "id": "reloj-07",
+        "titulo": "Invicta Batman",
+        "imagen": "../assets/img/relojes/Invicta/02.jpg",
+        "categoria": {
+            "nombre": "Rolexs",
+            "id": "rolex"
+        },
+        "precio":  "2.000"
+    },
+    {
+        "id": "reloj-08",
+        "titulo": "Invicta Ultra",
+        "imagen": "../assets/img/relojes/Invicta/03.jpg",
+        "categoria": {
+            "nombre": "Rolexs",
+            "id": "rolex"
+        },
+        "precio":  "10.500"
+    },
+    {
+        "id": "reloj-09",
+        "titulo": "Tissot Regular",
+        "imagen": "../assets/img/relojes/tissot/01.jpg",
+        "categoria": {
+            "nombre": "Rolexs",
+            "id": "rolex"
+        },
+        "precio":  "5.000"
+    }
+    
+]
