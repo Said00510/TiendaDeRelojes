@@ -2,6 +2,8 @@
 
 Este proyecto es una tienda de relojes en línea que he desarrollado como parte de mi aprendizaje en diseño web y práctica de JavaScript. Es uno de mis primeros proyectos significativos en los que me he enfocado en el manejo de JavaScript, ya que estaba en las primeras etapas de aprender este lenguaje de programación.
 
+![Preview](./imgs/project4.png)
+
 ## Características principales
 
 - **Catálogo de Relojes:** La tienda cuenta con un catálogo completo de diferentes tipos de relojes, incluyendo relojes analógicos y digitales, así como relojes para deportes, moda y ocasiones especiales.
